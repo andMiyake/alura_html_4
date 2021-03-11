@@ -1,0 +1,342 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+header {
+	background: #BBBBBB;
+	padding: 20px 0;
+}
+
+.caixa {
+	position: relative;
+	width: 940px;
+	margin: 0 auto;	/* cima,baixo - lados*/
+}
+
+nav {
+	position: absolute;
+	top: 110px;
+	right: 0;
+}
+
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;	/*cima direita baixo e esquerda */ 
+}
+
+
+nav a {
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+}
+
+nav a:hover {	/*quando o mouse estiver por cima dos links no menu de navegação*/
+	color: #C78C19;
+	text-decoration: underline;
+}
+
+.produtos {
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+
+.produtos li {
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	vertical-align: top;
+	margin: 0 1.5%;
+	padding: 30px 20px;
+	box-sizing: border-box; /*colocando o padding dentro da porcentagem de espaço*/
+	/*border-color: #000000;*/
+	/*border-width: 2px;*/
+	/*border-style: solid;*/
+	border: 2px solid #000000; /*tamanho estilo cor*/
+	border-radius: 10px;
+	/*border-radius: 10px 20px 30px 40px;*/
+}
+
+.produtos li:hover {
+	border-color: #C78C19;
+}
+
+.produtos li:active {
+	border-color: #088C19;
+}
+
+.produtos li:hover h2 { /* quero que o h2 quando o mouse estiver por cima dos li de produtos*/
+	font-size: 34px;
+}
+
+.produtos h2 {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.produto-descricao {
+	font-size: 18px;
+}
+
+.produto-preco {
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+footer {
+	text-align: center;
+	background: url("images/bg.jpg");
+	padding: 40px 0px;
+}
+
+.copyright {
+	color: #FFFFFF;
+	font-size: 13px;
+	margin: 20px 0 0;
+}
+
+main {
+
+}
+
+form {
+	margin: 40px 0;
+}
+
+/*todas as labels dentro de form e todos os labels dentro de form*/
+form label, form legend {
+	display: block;
+	font-size: 20px;
+	margin: 0 0 10px;
+}
+
+.input-padrao {
+	display: block;
+	margin: 0 0 20px;
+	padding: 10px 25px;
+	width: 50%;
+}
+
+.contato-main {
+	margin: 0 0 0 30px;
+}
+
+.checkbox {
+	margin: 20px 0;
+}
+
+.enviar {
+	width: 40%;
+	padding: 15px 0;
+	background: orange;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	transition: 1s all;
+	cursor: pointer;
+}
+
+.enviar:hover {
+	background: darkorange;
+	transform: scale(1.2);
+}
+
+table {
+	margin: 20px 0 40px;
+
+}
+
+thead {
+	background: #555555;
+	color: white;
+	font-weight: bold;
+}
+
+td, th {
+	border: 1px solid #000000;
+	padding: 8px 15px;
+
+}
+
+/*css da página inicial*/
+.banner {
+	width: 100%;
+}
+
+.titulo-principal {
+	text-align: center;
+	font-size: 2em;	/*Duas vezes o tamanho base de 15px*/
+	margin: 0 0 1em;
+	clear: left;	/*limpa o float a esquerda*/
+	/*color: rgba(0,0,0,0.3);*/
+}
+
+/*
+.titulo-principal:first-letter {
+	font-weight: bold;
+}
+
+.titulo-principal:before {
+	content: "[ ";
+}
+
+.titulo-principal:after {
+	content: " ]"; 
+}
+
+
+p:first-line {
+	font-style: italic;
+}
+*/
+
+.principal {
+	padding: 3em 0;
+	background: #FEFEFE;
+	width: 940px;
+	margin: 0 auto;
+}
+
+.principal p{
+	margin: 0 0 1em; /*Criando uma margem para baixo proporcional ao tamanho da fonte*/
+}
+
+.principal strong {
+	font-weight: bold;
+}
+
+.principal em {
+	font-style: italic;
+}
+
+.utensilios {
+	width: 120px;
+	float: left;	/*Flutua o elemento para que as tags seguintes possam ocupar sua "sombra"*/
+	margin: 0 20px 20px 0;	/* cima - direita - baixo - esquerda */
+}
+
+.mapa {
+	padding: 3em 0;
+	background: linear-gradient(#FEFEFE, #888888); 
+}
+
+.mapa-conteudo {
+	width: 940px;
+	margin: 0 auto;	
+}
+
+.mapa p {
+	margin: 0 0 2em;
+	text-align: center;
+}
+
+.beneficios {
+	padding: 3em 0;
+	background: #888888;
+	/*box-shadow: inset 0 0 30px #FF0000; sombra interna*/
+}
+
+.conteudo-beneficios {
+	width: 640px;
+	margin: 0 auto;
+}
+
+.lista-beneficios {
+	width: 40%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.itens {
+	line-height: 1.5;
+}
+
+/*Pseudo classe */
+.itens:first-child {
+	font-weight: bold;
+}
+
+.itens:before {
+	content: "🟊";
+}
+
+.imagem-beneficios {
+	width: 60%;
+	opacity: 1;
+	transition: 400ms;
+	box-shadow: 10px 10px 10px 0 #000000;
+	/*box-shadow: 10px 10px 30px 20px #000000, -10px -10px yellow, -20px 20px rgba(255,0,0,0.5);*/ /* X Y Blur IntensidadeBorda Cor*/
+}
+
+.imagem-beneficios:hover {
+	opacity: 0.3;
+}
+
+.video {
+	width: 560px;
+	margin: 2em auto;
+}
+
+/*Media Query - para telas que tenham até 480px entregamos esse estilo*/
+@media screen and (max-width: 480px) {
+	/*Página principal*/
+	.caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+		width: auto;
+	}
+
+	h1 {
+		text-align: center;
+	}
+
+	nav {
+		position: static;
+	}
+
+	.lista-beneficios, .imagem-beneficios {
+		width: 100%;
+	}
+
+	/*Página de Produtos*/
+	.produtos {
+		width: auto;
+		padding: 10px;
+	}
+
+	.produtos li {
+		width: auto;
+		display: block;
+		margin: 5px 10px 15px 10px;
+
+	}
+}
+
+/*
+--Seletores avançados do CSS -
+main > p {	--selecionando os p que são filhas diretas da main
+	background: red;
+}
+
+--selecionando o primeiro p irmão de img, primeiro p que vem logo depois de uma imagem
+img + p {
+	background: blue;
+}
+
+--pega todos os p que vem depois de uma imagem
+img ~ p {
+	background: yellow;
+}
+
+--Selecionando todos os p que não são da classe missão
+.principal p:not(#missao) {
+	background: orange;
+}
+
+*/
+
+
